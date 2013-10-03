@@ -1,0 +1,40 @@
+/* 
+    Document   : style
+    Created on : Sep 23, 2013, 1:48:11 PM
+    Author     : Brad Chamberlin
+    Description:
+        Display a hidden div block, when mouse over parent div block
+*/
+
+root { 
+    display: block;
+}
+
+.outer-box {
+    display: block;
+    border: 1px gray solid;
+    margin: 5px;
+    padding: 5px;
+}
+
+.inner-top-box {
+    display: block;
+    border: 1px blue dotted;
+    margin: 3px;
+    padding: 3px;
+    background-color: darkgray;
+}
+
+.inner-bottom-box {
+    display: block;
+    border: 1px green dashed;
+    margin: 3px;
+    padding: 3px;
+    background-color: burlywood;
+    opacity: 0;
+}
+
+.outer-box:hover .inner-bottom-box {
+    opacity: 1;
+}
+
